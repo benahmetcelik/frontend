@@ -1,0 +1,331 @@
+html {
+    height: 100%;
+}
+
+body{
+    background: rgb(11,22,79);
+    background: radial-gradient(circle, rgba(11,22,79,1) 0%, rgba(0,0,0,1) 100%);
+   font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 99%;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+li b{
+    font-size: 20px;
+    color: #666666;
+    font-weight: 400;
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+
+li b:hover{
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: finger;
+}
+
+.filter-white{
+    filter: invert(48%) sepia(79%) saturate(176%) hue-rotate(16deg) brightness(518%) contrast(109%);
+}
+
+.header{
+    width: 99%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-img img{
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.screen-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.contents{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.tags{
+    width: 99%;
+    margin-top: 100px;
+    margin-left: 25px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+}
+.tags ul li {
+    margin: 2px;
+    background-color: #33333346;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.tags ul li:hover {
+    margin: 10px;
+    background-color: #333333fb;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.re-listen{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+}
+
+.listen-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.left-header{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.listen-profile{
+    border-radius: 50%;
+    width: 70px;
+    margin-right: 15px;
+}
+.listen-title{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    width: 50%;
+}
+
+.listen-title h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.right-header{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-header ul li{
+    margin: 10px;
+    background-color: #00000046;
+    padding: 10px;
+    border-radius: 22px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #fff;
+}
+
+.musics{
+    width: 99%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+   
+}
+
+.music-box{
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    margin: 10px;
+    color: white;
+    text-align: left;
+    overflow-x: hidden;
+    cursor: finger;
+}
+
+
+.music-box:hover{
+    transform: scale(1.1);
+    
+    transform-origin:top;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.music-box:has(:hover) .image img{
+   transform: scale(1.1);
+ 
+    transition: all 0.2s ease-in-out;
+}
+.song-details{
+    background-color: #0000009f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap; 
+    border-radius: 15px;
+ }
+
+.music-box:has(:hover) .song-details{
+    transform: scale(0.9);
+    margin-top: -200px;
+     transition: all 0.2s ease-in-out;
+ }
+
+
+.music-box::-webkit-scrollbar {
+    width: 12px;
+    background-color: #ff0000;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    display: none;
+}
+ 
+.music-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color: #ff0000;
+    transition: all 0.3s ease;
+}
+ 
+.music-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: #fff6f6;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+.music-box .image:hover{
+    background-color: #00000046;
+}
+
+
+
+.music-box .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.music-box .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+

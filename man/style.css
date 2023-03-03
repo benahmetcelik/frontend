@@ -1,0 +1,217 @@
+body{
+    background-color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color: #ec9d00a2;
+    --hair-color : #fcd700;
+    --hair-bg-color : #fcd6006f;
+    --forehead-color: #eef2005c;
+    --eyebrow-color: #af0a0a00;
+    --eye-color: #00fa19;
+    --nose-color : #fda000c0;
+    --nostril-color : #00000045;
+    --tongue-color : #ff0000;
+    --mustache-color : #000000;
+
+
+}
+
+.head{
+   
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
+    background-color: var(--main-color);
+    padding: 0;
+    border-radius: 500px;
+    top: 0;
+}
+
+.head .hair{
+    background-color: var(--hair-bg-color);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 500px;
+    height: 50px;
+    width: 400px;
+    z-index: -10;
+}
+
+.hair span{
+    display: block;
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: var(--hair-color);
+    margin-left: 10px;
+    
+
+}
+
+.forehead{
+    background-color: var(--forehead-color);
+    height: 80px;
+    width: 400px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.eyebrows{
+    background-color: var(--eyebrow-color);
+    height: 80px;
+    width: 400px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eyebrows .eyebrow{
+    background-color: var(--main-color);
+    height: 80px;
+    width: 100px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.eyebrow .left{
+    display: block;
+    height: 80px;
+    width: 180px;
+    border-radius: 80px;
+    background-color: var(--eyebrow-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.eyebrow .right{
+    display: block;
+    height: 80px;
+    width: 180px;
+    border-radius: 80px;
+    background-color: var(--eyebrow-color);
+    margin-left: -80px;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+.eyes{
+    height: 80px;
+    width: 400px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.eyes .eye{
+    background-color: var(--eye-color);
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+.nose{
+    background-color: var(--nose-color);
+    height: 120px;
+    width: 80px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nose .nostril{
+    background-color: var(--nostril-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px;
+}
+
+.mustache{
+    background-color: var(--mustache-color);
+    height: 40px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+
+}
+
+.mouth{
+    height: 80px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tongue{
+    background-color: var(--tongue-color);
+    height: 40px;
+    width: 180px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

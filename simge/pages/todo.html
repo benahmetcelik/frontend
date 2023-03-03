@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="logo"><a href="./index.html">ToDo List</a></h1>
+        <div class="menu">
+            <ul >
+                <li>
+                    <a href="/">Home</a>
+                </li>
+    
+            </ul>
+        </div>
+       
+    </div> 
+
+    <div class="content">
+        <div class="container">
+            <h1>Home</h1>
+            <div class="box">
+                <div class="form-collapse" data-target="form-area">Yeni Ekle</div>
+                <div class="box collapsed form-area" id="form-area">
+                <form action="/add" method="POST">
+                    <input type="text" name="title" placeholder="Title">
+                    <input type="text" name="description" placeholder="Description">
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+            </div>
+            <div class="box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Task 1</td>
+                            <td>Description 1</td>
+                            <td>
+                                <a href="/edit/1" class="btn">Edit</a>
+                                <a href="/delete/1" class="btn">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Task 2</td>
+                            <td>Description 2</td>
+                            <td>
+                                <a href="/edit/2" class="btn">Edit</a>
+                                <a href="/delete/2" class="btn">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+                <div class="table-pagination">
+                    <a href="#" class="btn success">Previous</a>
+                    <a href="#" class="btn primary">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="/assets/js/scripts.js"></script>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombin</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 class="logo"><a href="./index.html">Kombin</a></h1>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h1>Home</h1>
+            <div class="form-collapse" data-target="form-area">Yeni Ekle</div>
+            <div class="box collapsed form-area" id="form-area">
+                <form action="/add" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mevsim">Mevsim</label>
+                        <select name="mevsim" id="mevsim">
+                            <option value="kis">Kış</option>
+                            <option value="ilkbahar">İlkbahar</option>
+                            <option value="yaz">Yaz</option>
+                            <option value="sonbahar">Sonbahar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">pantolon</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Kazak/Tshirt</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Ceket</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Şapka/Bere</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Ayakkabı</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pantolon">Gözlük</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Çorap</label>
+                        <input type="text" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Ruj</label>
+                        <input type="color" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Oje</label>
+                        <input type="color" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Far</label>
+                        <input type="color" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Allık</label>
+                        <input type="color" name="pantolon" id="name" placeholder="pantolon">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pantolon">Aksesuar</label>
+                        <select name="aksesuar" id="aksesuar">
+                            <option value="saat">Saat</option>
+                            <option value="kolye">Kolye</option>
+                            <option value="küpe">Küpe</option>
+                            <option value="küpe">Bileklik</option>
+                        </select>
+                    </div>
+
+
+                    <button class="btn success full" type="submit">Kaydet</button>
+
+
+
+                </form>
+            </div>
+
+
+            <div class="box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>İsim</th>
+                            <th>Mevsim</th>
+                            <th>Pantolon</th>
+                            <th>Kazak/Tshirt</th>
+                            <th>Ceket</th>
+                            <th>Şapka/Bere</th>
+                            <th>Ayakkabı</th>
+                            <th>Gözlük</th>
+                            <th>Çorap</th>
+                            <th>Ruj</th>
+                            <th>Oje</th>
+                            <th>Far</th>
+                            <th>Allık</th>
+                            <th>Aksesuar</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>İsim</td>
+                            <td>Mevsim</td>
+                            <td>Pantolon</td>
+                            <td>Kazak/Tshirt</td>
+                            <td>Ceket</td>
+                            <td>Şapka/Bere</td>
+                            <td>Ayakkabı</td>
+                            <td>Gözlük</td>
+                            <td>Çorap</td>
+                            <td>Ruj</td>
+                            <td>Oje</td>
+                            <td>Far</td>
+                            <td>Allık</td>
+                            <td>Aksesuar</td>
+                            <td>
+                                <a href="#" class="btn success">Düzenle</a>
+                                <a href="#" class="btn danger">Sil</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="/assets/js/scripts.js"></script>
+</html>

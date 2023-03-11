@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Script</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/assets/img/logo.png" alt="logo" />
+        </div>
+
+        <div class="actions">
+            <ul>
+                <li class="dropdown " id="dropdown"><a href="#">My Profile</a>
+                    <ul class="dropdown-item">
+                        <li><a href="edit-account.html">Edit Account</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="body">
+    
+        
+        <div class="content">
+            <div class="content-header">
+                <div class="header-item">
+                    <h1>Users</h1>
+                    <small>Kullanıcı Ekleyebilrisinz</small>
+                    <button class="open-modal" data-modal-id="modal">Ekle</button>
+                </div>
+
+                <div class="header-item">
+                    <form action="" method="POST">
+                        <input type="text" name="search" placeholder="Search" />
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+
+            </div>
+               
+            
+            <div class="content-body">
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                     
+                        <tr>
+                            <td>admin</td>
+                            <td>admin@admin.com </td>
+                            <td>Admin</td>
+                            <td>
+                                <a href="edit-user.html">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>user</td>
+                            <td>user@user.com </td>
+                            <td>User</td>
+                            <td>
+                                <a href="edit-user.html">Edit</a>
+                            </td>
+                        </tr>
+                        </tbody>
+
+                 
+
+
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    
+      
+
+
+    </div>
+    <div class="modal active" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Modal</div>
+                <div class="modal-close" id="modal-close">X</div>
+            </div>
+            <div class="modal-body">
+                <p>Add User Form</p>
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                </form>
+                
+            </div>
+            <div class="modal-footer">
+                <button class="modal-footer-btn">Save</button>
+                <button class="modal-footer-btn">Cancel</button>
+            </div>
+        </div>
+       
+    </div>
+
+    <script src="/assets/js/scripts.js"></script>
+    <div class="footer">
+        <b>© 2021 Note Script</b>
+    </div>
+</body>
+
+</html>

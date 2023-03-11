@@ -1,0 +1,117 @@
+.navbar-brand img{
+    padding: 0px;
+    height: 50px;
+}
+/*
+Animations
+*/
+@keyframes flash {
+    0%, 50%, 100% {
+       opacity: 1;
+    }
+    25%, 75% {
+       opacity: 0;
+    }
+ }
+
+ .flash-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: 50px;
+    background-color: #fb0404;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+
+ }
+
+.flash{
+    background-color: #fb0404;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    animation: flash 3s infinite;
+    float: left;
+}
+
+.flash-news{
+    background-color: #fb0404;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    float: right;
+    overflow: hidden;
+    width: 80%;
+
+}
+
+.flash-news li{
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.flash-news li a{
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.flash-news li a:hover{
+    color: #fff;
+}
+
+
+
+
+.socials{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: 50px;
+    background-color: #fb0404;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    padding: 0 10px;
+}
+
+.socials ul{
+    list-style: none;
+    list-style-type: none;
+    padding: 10;
+    margin: 10;
+}
+
+
+.socials ul li{
+    display: inline-block;
+    margin-right: 10px;
+    list-style: none;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.socials ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials ul li a:hover{
+    color: #fff;
+}

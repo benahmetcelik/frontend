@@ -1,0 +1,112 @@
+body{
+    background: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.true{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    background-color: rgb(9, 238, 55);
+    padding: 10px;
+    height : 99vh;
+    width: 100%;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.false{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    animation: blink 1s infinite;
+    background-color: rgb(249, 6, 6);
+    padding: 10px;
+    height : 99vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.reset{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #540000;
+    text-shadow: 0 0 10px #fff;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    padding: 20px;
+    height : 100px;
+    width : 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    margin: auto;
+    left: 45%;
+    font-size: xx-large;
+    
+    
+}
+
+#truePlus{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+
+#falsePlus{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+#trueMinus{
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+#falseMinus{
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    width: 50%;
+    background-color: #00000053;
+}

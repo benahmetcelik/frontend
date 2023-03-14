@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Admin</h1>
+        </div>
+        <div class="user">
+            <ul>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/logout.html">Logout</a></li>
+
+            </ul>
+        </div>
+       
+        
+    </div>
+    <div class="content">
+        
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="/admin/index.html">Home</a></li>
+                <span>></span>
+                <li><a href="/admin/users.html">Users</a></li>
+                <span>></span>
+
+                <li><a href="/admin/users.html">Add User</a></li>
+            </ul>
+        </div>
+
+        <div class="body">
+            <div class="form">
+                <form action="">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input-group">
+                        <div class="controls">
+                            <button id="start" type="button">Kaydı Başlat</button>
+                            <button id="stop" type="button">Kaydı Bitir</button>
+                            <button id="cancel" type="button">Kaydı İptal Et</button>
+                        </div>
+                        <canvas id="canvas"></canvas>
+                    </div>
+
+                    <div class="input-groups form-repater">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="input-group">
+                            <label for="example">Example</label>
+                            <input type="text" name="example" id="example">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+body{
+    background-color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+.header{
+    background-color: #fff;
+    padding: 20px ;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+.header .user{
+    display: flex;
+    align-items: center;
+}
+
+.header .user ul{
+    display: flex;
+    align-items: center;
+}
+
+.header .user ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header .user ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.header .user ul li a:hover{
+    background-color: #f1f1f1;
+}
+
+
+
+.content{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.breadcrumb{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.breadcrumb ul{
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.breadcrumb ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.breadcrumb ul li a:hover{
+    background-color: #00ff1e;
+}
+
+.breadcrumb ul li span{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.breadcrumb ul span{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 5px;
+}
+
+.body{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer{
+    background-color: #fff;
+    padding: 20px ;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.form{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+
+}
+
+
+.form form{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+
+.form form .input-group{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form form .input-group input{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:  20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+
+}
+
+.form form .input-group textarea{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form form .input-group select{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form form .input-group button{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form form .input-group label{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:  20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form form .input-groups {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	margin-top: 50px;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
+
+canvas {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	margin-bottom: 20px;
+}

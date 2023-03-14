@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Sounds</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <style id="template">
+        :root{
+            --light-bg: #f1f1f1;
+            --dark-bg: #333;
+            --light-text: #333;
+            --dark-text: #fff;
+            --light-border: #ddd;
+            --dark-border: #333;
+            --light-shadow: 0 0 10px rgba(0,0,0,0.1);
+            --dark-shadow: 0 0 10px rgba(255,255,255,0.1);
+            --light-hover: #02fb27;
+            --dark-hover: #fb0000;
+            --soft-light: #969696;
+        }
+
+        .dark{
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        body.dark .search{
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        } 
+        
+        body.dark .contents{
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+
+        body.dark .contents .content{
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+        
+        body.dark .contents .content .word{
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        } 
+        body.dark .contents .content .word .open-helper{
+            background-color: var(--soft-light);
+            color: var(--dark-text);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+           <h1><a href="/">English Sounds</a></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="words-1.html">Words</a></li>
+                <li><a href="phrases-1.html">Phrases</a></li>
+                <li><a href="sentences-1.html">Sentences</a></li>
+            </ul>
+        </div>
+        <div class="change-template">
+            <div class="change-template-btn" onclick="changeTemplate()">
+                <img src="asset/img/light.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="Search">
+        <input type="submit" id="submit" placeholder="Search">
+    </div>
+
+    <div class="contents">
+        
+        <div class="title">
+            <h1>Words</h1>
+        </div>
+
+        <div class="desc">
+            <p>Click on the word to listen to the sound</p>
+        </div>
+
+        <div class="content" id="container">
+           
+        </div>
+
+        <div class="pagination">
+           
+            <div class="prev-page" onclick="prevPage()">
+                Prev
+            </div>
+
+            <div class="next-page" onclick="nextPage()">
+                Next
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="footer-content ">
+            <div class="site-desc border">
+                <h1>English Sounds</h1>
+                <p>English Sounds is a website that <br> helps you learn English sounds. You can learn English sounds by listening to the sounds of words, phrases and sentences.</p>
+            
+            </div>
+
+            <div class="v-menu border">
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="words-1.html">Words</a></li>
+                    <li><a href="phrases-1.html">Phrases</a></li>
+                    <li><a href="sentences-1.html">Sentences</a></li>
+                </ul>
+            </div>
+
+            <div class="socials border ">
+                <h1>Socials</h1>
+                <ul>
+                    <li><a href="https://www.facebook.com/EnglishSounds-103979202202551">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/englishsounds/">Instagram</a></li>
+                    <li><a href="https://twitter.com/EnglishSounds1">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+       
+            
+    </div>
+    <div class="copyright">
+        <p>English Sounds &copy; 2021</p>
+    </div>
+    <script>
+        const words = 'ex';
+    </script>
+
+    <script src="asset/js/words.js"></script>
+
+    <script src="asset/js/scripts.js"></script>
+</body>
+</html>

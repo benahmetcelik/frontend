@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="timer">
+       <div class="inputs" id="inputs">
+         
+            <input type="number" id="minutes" placeholder="Minutes" value="0">
+            <input type="number" id="seconds" placeholder="Seconds" value="0">
+
+       </div>
+        <div class="buttons">
+            <button id="timer_button">Start</button>
+            <button id="timer_stop">Stop</button>
+        </div>
+
+        <div id="timer_clock">
+            00:00
+        </div>
+        
+    </div>
+
+    <div class="true" id="true">
+        <div id="truePlus">
+            +
+        </div>
+        <div id="trueCount">
+            0
+        </div>    
+      <div id="trueMinus">
+            -
+      </div>   
+    </div>
+    <div class="false" id="false">
+        <div id="falsePlus">
+            +
+        </div>
+        <div id="falseCount">
+            0
+        </div>    
+      <div id="falseMinus">
+            -
+      </div>   
+    </div>
+
+    <div class="reset"  id="resetFull">
+     Reset
+    </div>
+    <div class="word" id="word">
+       
+    </div>
+<script>
+    const startFileNumber = 0;
+    const endFileNumber = 364;
+</script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

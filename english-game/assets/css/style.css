@@ -1,0 +1,261 @@
+body{
+    background: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.true{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    background-color: rgb(9, 238, 55);
+    padding: 10px;
+    height : 99vh;
+    width: 100%;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.false{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    animation: blink 1s infinite;
+    background-color: rgb(249, 6, 6);
+    padding: 10px;
+    height : 99vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.reset{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 700;
+    color: #540000;
+    text-shadow: 0 0 10px #fff;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    padding: 20px;
+    height : 100px;
+    width : 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    margin: auto;
+    left: 45%;
+    font-size: xx-large;
+    
+    
+}
+
+#truePlus{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+
+#falsePlus{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+#trueMinus{
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+#falseMinus{
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    width: 50%;
+    background-color: #00000053;
+}
+
+
+.word{
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    background-color: rgba(36, 9, 238, 0.495);
+    border-radius: 50px;
+    box-shadow: 0 0 10px #fff;
+    transition: all 0.5s ease;
+  
+    height : 200px;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+
+}
+
+@keyframes UpToDown {
+    0% {
+        top: 20%;
+    }
+    50% {
+        top: 80%;
+    }
+    100% {
+        top: 20%;
+    }
+}
+
+.word .english{
+
+}
+
+.word .turkish{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.word:hover{
+    background-color: #540000;
+}
+
+.word:hover .english{
+    display: none;
+    transition: all 0.5s ease;
+   
+
+}
+
+
+.word:hover .turkish{
+    display: block;
+    transition: all 0.5s ease;
+}
+
+
+.timer{
+    position: fixed;
+   
+   
+    text-align: space-between;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    padding: 10px;
+    left: 45%;
+    z-index: 9999;
+    top: 55%;
+    
+}
+
+.timer .inputs{
+    display: flex;
+    text-align: space-between;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -60px;
+}
+
+.timer .inputs input{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    background-color: #00000000;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    transition: all 0.5s ease;
+    margin: 10px;
+    
+
+}
+
+.timer .buttons{
+    display: flex;
+    text-align: space-between;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -60px;
+}
+
+.timer .buttons button{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    background-color: #00000000;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    transition: all 0.5s ease;
+    margin: 10px;
+    
+
+}
+
+
+.timer .buttons button:hover{
+    background-color: #00000053;
+    box-shadow: 0 0 10px #fff;
+    transition: all 0.5s ease;
+}
